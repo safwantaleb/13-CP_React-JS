@@ -2,14 +2,7 @@
   text-align: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
 .App-header {
-  background-color: #282c34;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -17,15 +10,25 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
-  background-size: 107%;
-  background-image: url(./wp2729921-wallpaper-full-hd-gifs-animados.gif);
+  position: relative;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+.bckimg {
+  background-color: #464646;
+  background-image: url(./source_3.gif);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: absolute;
+  z-index: -1;
+  filter: blur(4px);
+}
+@media only screen and (max-width: 700px) {
+  .bckimg {
+    background-blend-mode: multiply;
+    background-size: cover;
   }
 }
