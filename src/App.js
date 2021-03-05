@@ -1,7 +1,7 @@
 import "./App.css";
 import { Button, Form, Col, Nav, Navbar, FormControl } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
-import "bootstrap/dist/css/bootstrap.css";
+
 function App() {
   return (
     <div className="App">
